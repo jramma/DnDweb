@@ -18,10 +18,3 @@ sr.reveal('.hero-text',{delay:200,origin:'top'});
 sr.reveal('.hero-img',{delay:450,origin:'top'});
 sr.reveal('.icons',{delay:500,origin:'left'});
 sr.reveal('.scroll-down',{delay:500,origin:'left'});
-
-
-function randomBg() {
-    var random = Math.floor(Math.random() * 4) + 1; // Genera un número aleatorio entre 1 y 4
-    document.body.className = 'bg-image-' + random; // Asigna la clase correspondiente a la imagen de fondo
-  }
-  

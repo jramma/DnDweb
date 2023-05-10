@@ -12,31 +12,20 @@ header {
     position: fixed;
     right: 0;
     top: 0;
-    z-index: 9999;
+    z-index: 1000;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 33px;
     background: transparent;
-    background-color: rgba(240, 248, 255, 0.625);
-}
 
-body {
-    margin: 0;
-    padding: 0;
-    perspective: 1px;
-    transform-style: preserve-3d;
-    height: 100%;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    font-family: Nunito;
 }
 
 .logo {
     font-size: 30px;
     font-weight: 700;
-    color: red;
+    color: white;
 }
 
 .navlist {
@@ -44,7 +33,7 @@ body {
 }
 
 .navlist a {
-    color: rgb(0, 0, 0);
+    color: white;
     margin-left: 60px;
     font-size: 15px;
     font-weight: 600;
@@ -53,17 +42,142 @@ body {
 }
 
 .navlist a:hover {
-    border-bottom: 2px solid rgb(255, 0, 0);
+    border-bottom: 2px solid white;
 }
 
 #menu-icon {
-    color: rgb(255, 0, 0);
+    color: white;
     font-size: 35px;
     z-index: 10001;
     cursor: pointer;
     display: none;
 }
 
+.hero {
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(245.59deg, #A30D1A 0%, #D51020 28.53%, #DD545F 75.52%);
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+section {
+    padding: 0 19%;
+}
+
+.hero-text h5 {
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.hero-text h1 {
+    font-family: 'Castoro Titling', cursive;
+    font-size: 90px;
+    line-height: 1;
+    color: white;
+    margin: 0 0 45px;
+}
+
+.hero-text h4 {
+    font-size: 18 px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 10px;
+
+
+
+}
+
+.hero-text p {
+    color: white;
+    font-size: 15px;
+    line-height: 1.9;
+    margin-bottom: 40px;
+
+}
+
+.hero-img img {
+    width: 700px;
+    height: auto;
+}
+
+.hero-text a {
+    display: inline-block;
+    color: white;
+    background: #57070E;
+    border: 1px solid transparent;
+    padding: 12px 30px;
+    line-height: 1.4;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 30px;
+    text-transform: uppercase;
+    transition: all .55s ease;
+}
+
+.hero-text a:hover {
+    background: transparent;
+    border: 1px solid white;
+    transform: translateX(8px);
+}
+
+.hero-text a.ctaa {
+    background: transparent;
+    border: 1px solid white;
+    margin-left: 20px;
+}
+
+
+.hero-text a.ctaa i {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.icons {
+    position: absolute;
+    top: 50%;
+    padding: 0 9%;
+    transform: translateY(-50%);
+}
+
+.icons i {
+    display: block;
+    margin: 26px 0;
+    font-size: 24px;
+    color: white;
+    transition: all .50s ease;
+}
+
+.icons i:hover {
+    color: #57070E;
+    transform: translateY(-5px);
+}
+
+.scroll-down {
+    position: absolute;
+    bottom: 6%;
+    right: 9%;
+}
+
+.scroll-down i {
+    display: block;
+    padding: 12px;
+    font-size: 25px;
+    color: white;
+    background: #57070E;
+    border-radius: 30px;
+    transition: all .50s ease;
+}
+
+.scroll-down i:hover {
+    transform: translateY(-5px);
+}
 
 @media(max-width:1535px) {
     header {
@@ -181,99 +295,3 @@ body {
         height: auto;
     }
 }
-
-/* /////////////////////////////////////// */
-#id {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.libreria {
-    display: grid;
-    grid-row: 50%;
-}
-
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-.libreria i {
-    font-size: 4rem;
-    margin: 1rem;
-}
-
-.libreria a {
-    margin: 1rem;
-}
-
-/* Fondo que cambia */
-.bg-image-1 {
-    background-image: url('img/land.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-
-}
-
-.bg-image-2 {
-    background-image: url('./img/land1.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-
-}
-
-.bg-image-3 {
-    background-image: url('img/land2.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-
-}
-
-.bg-image-4 {
-    background-image: url('img/land3.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-
-}
-
-/* PARALLAX */
-
-*,
-*::before,
-*::after
-{
-    box-sizing: border-box;
-}
-main{
-    height: 110vh;
-    overflow-x: hidden;
-    overflow-y: auto;
-    perspective: 2px;
-}
-section{
-    transform-style: preserve-3d ;
-    position: relative;
-    height: 100vh;
-    display: felx;
-    align-items: center;
-    justify-content: center;
-    color: rgb(0, 0, 0);
-}
-section h1
-{
-    text-align: center;
-    font-size: 4rem;
-}
-.no-parallax{
-    background-color: #ffffc8;
-    z-index: 999;
-}
-
-
-
-
-
-
