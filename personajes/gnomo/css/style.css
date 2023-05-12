@@ -57,7 +57,7 @@ header {
     height: 100%;
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(245.59deg, #6E7AE6 0%, #878BAD 28.53%, #AFB4E1 75.52%);
+    background: linear-gradient(245.59deg, #E6C667 0%, #E0B122 28.53%, #B28D1B 75.52%);
     position: relative;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -303,7 +303,7 @@ section {
 }
 
 .no-parallax{
-    background: linear-gradient(245.59deg, #878BAD 0%, #AFB4E1 28.53%, white 75.52%);
+    background: linear-gradient(245.59deg, #B28D1B 0%, #E0B122 28.53%, #E6C667 75.52%);
     z-index: 999;
     transform-style: preserve-3d ;
     position: relative;
